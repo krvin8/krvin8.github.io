@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
   <!-- Custom Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
@@ -190,7 +190,7 @@
       </div>
 
       <div class="col-md-6 col-md-pull-6 contact-box">
-        <div id="map"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.214889067503!2d121.01699791446427!3d14.643739789775001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b659aa810795%3A0x58cc3dd667cae2f5!2sSteeltrust+Corporation!5e0!3m2!1sen!2s!4v1489293099980" id="map" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="block-txt">
           <div class="row">
             <div class="col-md-6">
@@ -236,27 +236,6 @@
 <script src="js/jquery.fittext.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/steeltrust.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-  function initialize() {
-    var mapCanvas = document.getElementById('map');
-    var mapOptions = {
-      center: new google.maps.LatLng(14.650241, 121.020946),
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      scrollwheel: false,
-      zoomControl: false,
-      scaleControl: false,
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-    var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(14.650241, 121.020946),
-      map: map
-    })
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 </body>
 

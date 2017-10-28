@@ -1250,6 +1250,13 @@ footer .social-media .fa {
     .call-to-action h2 {
         font-size: 30px;
     }
+    .input-group-addon.btn-primary {
+        border-top-right-radius: 0;
+    }
+
+    .page-home header {
+        min-height: 100vh;
+    }
 
     .page-pricing .package {
         height: auto;

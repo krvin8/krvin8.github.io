@@ -758,7 +758,9 @@ img::-moz-selection {
     transform: scale(1.05);
 }
 
-
+.page-home .bg-people {
+    display: none;
+}
 .page-home .text {
     display: table-cell;
     vertical-align: middle;
@@ -1250,12 +1252,29 @@ footer .social-media .fa {
     .call-to-action h2 {
         font-size: 30px;
     }
-    .input-group-addon.btn-primary {
+
+    .input-group input.form-control {
+        height: 50px;
+    }
+    .input-group-addon.btn-primary,
+    .cta .input-group-addon.btn-primary {
         border-top-right-radius: 0;
     }
 
     .page-home header {
         min-height: 100vh;
+        background: none;
+    }
+    .page-home header .header-content {
+        padding: 60px 15px;
+    }
+    .page-home .bg-people {
+        display: block;
+        position: relative;
+        top: 80px;
+    }
+    .page-home .bg-people img {
+        width: 70%;
     }
 
     .page-pricing .package {

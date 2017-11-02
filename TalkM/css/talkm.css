@@ -811,7 +811,7 @@ img::-moz-selection {
     padding: 120px 15px 0;
 }
 .page-pricing section {
-    padding: 0 0 60px;
+    padding: 0;
 }
 .page-pricing .avatar {
     width: 180px;
@@ -1105,12 +1105,13 @@ footer .social-media a {
     text-decoration: none;
 }
 footer .social-media .fa {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background: #1A2C53;
     display: table-cell;
     vertical-align: middle;
     border-radius: 50%;
+    font-size: 16px;
 }
 
 /*------------------------ MEDIA QUERIES ---------------------*/
@@ -1214,6 +1215,12 @@ footer .social-media .fa {
     footer .social-media {
         text-align: center;
     }
+
+    footer .links a {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
     
 }
 @media (max-width: 480px) {
@@ -1274,7 +1281,7 @@ footer .social-media .fa {
         top: 80px;
     }
     .page-home .bg-people img {
-        width: 70%;
+        width: 90%;
     }
 
     .page-pricing .package {

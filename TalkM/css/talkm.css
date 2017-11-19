@@ -65,8 +65,10 @@ p {
     color: #EF5444;
 }
 
+.mt0 { margin-top: 0 !important; }
 .mt10 { margin-top: 10px; }
 .mt20 { margin-top: 20px; }
+.mb0 { margin-bottom: 0; }
 .mb20 { margin-bottom: 20px; }
 .mb30 { margin-bottom: 30px; }
 .mb40 { margin-bottom: 40px; }
@@ -874,7 +876,8 @@ img::-moz-selection {
 }
 .page-pricing header,
 .page-terms header,
-.page-support header {
+.page-support header,
+.page-demo header {
     background: none;
     min-height: 210px;
 }
@@ -925,6 +928,10 @@ img::-moz-selection {
 }
 .page-pricing .package.active .fa {
     color: #0753ff;
+}
+
+.page-demo .others {
+    padding-bottom: 0;
 }
 
 
@@ -1030,7 +1037,8 @@ img::-moz-selection {
     color: #909CB9;
 }
 
-.page-product header {
+.page-product header,
+.page-demo header {
     background-image: url(../img/talkm-bg-top.png);
     background-position: center;
     background-attachment: fixed;
@@ -1051,27 +1059,34 @@ img::-moz-selection {
 .page-product .others {
     padding: 0;
 }
-.page-product .others .card .avatar {
+.page-product .others .card .avatar,
+.page-demo .others .card .avatar {
     width: 180px;
     height: 180px;
     margin: 10px auto 30px;
 }
-.page-product .others .card .text {
+.page-product .others .card .text,
+.page-demo .others .card .text  {
     margin: 20px 0 30px;
 }
-.page-product .others .link {
+.page-product .others .link,
+.page-demo .others .link {
     border-bottom: 2px solid;
     padding: 10px 0;
     text-decoration: none;
 }
 .page-product .others .link:hover,
 .page-product .others .link:focus,
-.page-product .others .link:active {
+.page-product .others .link:active,
+.page-demo .others .link:hover,
+.page-demo .others .link:focus,
+.page-demo .others .link:active {
     text-decoration: none;
     color: #192B54;
     border-color: #192B54;
 }
-.page-product .icon .fa {
+.page-product .icon .fa,
+.page-demo .icon .fa {
     font-size: 36px;
     color: #0753ff;
 }

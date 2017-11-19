@@ -932,6 +932,10 @@ img::-moz-selection {
     color: #0753ff;
 }
 
+
+.page-demo header .header-content {
+    padding-top: 110px;
+}
 .page-demo .others {
     padding-bottom: 0;
 }
@@ -1609,16 +1613,19 @@ footer .social-media .fa {
     .page-product header .header-content .header-content-inner .text {
         text-align: center;
     }
-    .page-product .others .card {
+    .page-product .others .card,
+    .page-demo .others .card {
         padding: 15px;
         margin-bottom: 15px;
     }
-    .page-product .others .card .text {
+    .page-product .others .card .text,
+    .page-demo .others .card .text {
         margin: 0 15px 20px;
         float: left;
         text-align: left;
     }
-    .page-product .others .card .avatar {
+    .page-product .others .card .avatar,
+    .page-demo .others .card .avatar {
         width: 80px;
         height: 80px;
         margin: 0;

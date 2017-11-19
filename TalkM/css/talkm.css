@@ -376,12 +376,14 @@ label {
     border: none;
 }
 .navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: none;
     background: none;
 }
 .navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
+.navbar-default .navbar-form,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     border-color: none;
     border: none;
 }

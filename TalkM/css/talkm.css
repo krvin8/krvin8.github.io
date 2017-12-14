@@ -459,7 +459,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/TalkM_Background-hi.png);
+    background: #f8f9fe;
+    /*background-image: url(../img/TalkM_Background-hi.png);*/
     background-position: center;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -468,7 +469,7 @@ header {
     -o-background-size: cover;
 }
 header .header-content {
-    padding: 150px 15px;
+    padding: 0;
     text-align: center;
 }
 header .header-content .header-content-inner {
@@ -830,6 +831,28 @@ img::-moz-selection {
     transform: scale(1.05);
 }
 
+
+.carousel {
+    position: fixed;
+}
+.carousel-caption {
+    text-shadow: none;
+    top: 140px;
+}
+.carousel-control.left,
+.carousel-control.right,
+.carousel-control {
+    background-image: none !important;
+}
+
+
+.page-home #home-products {
+    position: relative;
+    background: #F8F9FE;
+}
+.page-home footer {
+    position: relative;
+}
 .page-home .bg-people {
     display: none;
 }
@@ -863,6 +886,7 @@ img::-moz-selection {
 .page-home h2 {
     color: #f2533e;
 }
+
 
 .page-pricing,
 .page-support,
@@ -935,6 +959,7 @@ img::-moz-selection {
 
 .page-demo header .header-content {
     padding-top: 110px;
+    padding-bottom: 100px;
 }
 .page-demo .others {
     padding-bottom: 0;
@@ -1346,7 +1371,7 @@ img::-moz-selection {
 
 /*------------------------ FOOTER ---------------------*/
 footer {
-    background: url(../img/talkm-bg-bottom.png);
+    background: url(../img/talkm-bg-bottom.png) #F8F9FE;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1523,6 +1548,22 @@ footer .social-media .fa {
 @media (max-width: 480px) {
     .txt-28 {
         font-size: 16px;
+    }
+
+    .carousel-inner,
+    .carousel-inner>.item {
+        height: 100vh;
+    }
+
+    .carousel-inner>.item>a {
+        visibility: hidden;
+    }
+    .carousel-caption {
+        overflow: hidden;
+        width: 100%;
+        right: 0%;
+        left: 0%;
+        top: 0;
     }
 
     header .header-content {

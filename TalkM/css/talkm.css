@@ -68,6 +68,8 @@ p {
 .mt0 { margin-top: 0 !important; }
 .mt10 { margin-top: 10px; }
 .mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt40 { margin-top: 40px; }
 .mb0 { margin-bottom: 0; }
 .mb20 { margin-bottom: 20px; }
 .mb30 { margin-bottom: 30px; }
@@ -102,6 +104,7 @@ label {
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 
 
 
@@ -195,6 +198,7 @@ label {
     font-weight: 600;
     color: #192B54;
     border-bottom: 3px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
 }
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
@@ -559,9 +563,9 @@ header .header-content .header-content-inner p {
     background: #192B54 !important;
 }
 .btn-primary {
-    border-color: #0853ff;
+    border-color: #f1533d;
     color: #fff;
-    background-color: #0853ff;
+    background-color: #f1533d;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     border-radius: 60px;
@@ -581,9 +585,9 @@ header .header-content .header-content-inner p {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #0538ad;
+    border-color: #c33a26;
     color: #fff;
-    background-color: #0538ad;
+    background-color: #c33a26;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -631,7 +635,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 .btn-xl {
     padding: 15px 30px;
@@ -665,6 +669,7 @@ fieldset[disabled] .btn-primary.active {
 
 .input-group-addon {
     padding: 6px 22px;
+    border: 1px solid #E4E7EA;
 }
 .input-group-addon.btn-primary {
     background: #f5543d;
@@ -844,11 +849,25 @@ img::-moz-selection {
 .carousel-control {
     background-image: none !important;
 }
+.carousel-caption .btn {
+    text-shadow: none;
+    height: 60px;
+    font-size: 16px;
+    width: 190px;
+}
 
 
 .page-home #home-products {
     position: relative;
     background: #F8F9FE;
+}
+#home-products .why-talkm {
+    background: #ffffff;
+    padding: 40px 60px;
+    color: #192b54;
+    -webkit-box-shadow: 0 20px 60px rgba(217, 219, 228);
+    -moz-box-shadow: 0 20px 60px rgba(217, 219, 228);
+    box-shadow: 0 20px 60px rgb(217, 219, 228);
 }
 .page-home footer {
     position: relative;
@@ -1013,7 +1032,8 @@ img::-moz-selection {
     margin-bottom: 15px;
 }
 .page-register .reg-form input,
-.page-register .reg-form textarea {
+.page-register .reg-form textarea,
+.page-register .reg-form select {
     border: 1px solid #E4E7EA;
     height: 50px;
     -webkit-border-radius: 8px;
@@ -1024,7 +1044,8 @@ img::-moz-selection {
     color: #192B54;
 }
 .page-register .reg-form input:focus,
-.page-register .reg-form textarea:focus {
+.page-register .reg-form textarea:focus,
+.page-register .reg-form select:focus {
     border-color: #054EFF;
 }
 .page-register .reg-form input::placeholder {
@@ -1070,6 +1091,12 @@ img::-moz-selection {
 
 .page-product header {
     padding: 150px 15px;
+}
+.page-product .cta-top .btn {
+    text-shadow: none;
+    height: 60px;
+    font-size: 16px;
+    width: 190px;
 }
 .page-product header,
 .page-demo header {
@@ -1643,6 +1670,9 @@ footer .social-media .fa {
         font-size: 18px;
     }
 
+    #home-products .why-talkm {
+        padding: 30px 20px;
+    }
     .page-pricing header .header-content {
         padding: 100px 15px 20px;
     }

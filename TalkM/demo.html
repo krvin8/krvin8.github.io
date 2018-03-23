@@ -70,15 +70,15 @@
                 </a>
               </li>
               <li>
-                <a href="products/chatbot.html">
-                  <img src="img/talkm-products-chatbot.png" alt="TalkM - Chatbot Icon" class="icon">
-                  <div class="text">Chatbot</div>
-                </a>
-              </li>
-              <li>
                 <a href="products/analytics.html">
                   <img src="img/talkm-products-analytics.png" alt="TalkM - Analytics Icon" class="icon">
                   <div class="text">Analytics</div>
+                </a>
+              </li>
+              <li>
+                <a href="products/mobile-sdk.html">
+                  <img src="img/talkm-products-chatbot.png" alt="TalkM - Mobile SDK Icon" class="icon">
+                  <div class="text">Mobile SDK</div>
                 </a>
               </li>
             </ul>
@@ -107,33 +107,103 @@
 
   <header id="demo">
     <div class="container header-content">
-      <div class="header-content-inner text-left wow fadeInUp">
-        <div class="col-sm-8 col-sm-push-2 text-center avatar">
+      <div class="header-content-inner text-left wow fadeIn">
+        <div class="col-md-5 text-center avatar">
           <img class="img-responsive" src="img/talkm-people.png" alt="TalkM - People Chatting">
         </div>
-        <div class="col-sm-12 text-center">
-          <h1 class="mt0">Want to see how TalkM works?</h1>
-          <p>Signup now and one of our representatives will talk to you soon.</p>
-          <div class="input-group subscribe wow fadeIn">
-            <input type="text" class="form-control" aria-label="Enter your email address" placeholder="Enter your email address">
-            <a class="input-group-addon btn btn-primary">Start Free Trial</a>
-          </div>
+        <div class="col-md-7 text">
+          <h1>Request Demonstration</h1>
+          <p>Schedule a demo to see how TalkM can help in your business.</p>
+          <p>In this one-hour session, our product consultant will walk you through a workflow that will demonstrate how you can provide excellent customer service with TalkM.</p>
+
+          <form action="#" method="post" class="reg-form">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Full Name</label>
+                <input type="text" name="reg_name" placeholder="Your full name">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Email Address</label>
+                <input type="email" name="reg_email" placeholder="Ex: your@email.com">
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <label>Contact Number</label>
+                <input type="number" name="reg_contact" placeholder="Ex: +63 123 456 7890">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Company Name</label>
+                <input type="text" name="reg_company" placeholder="Your app/company name">
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <label for="sel1">Company Size</label>
+                <select class="form-control" id="sel1">
+                  <option>1-9</option>
+                  <option>10-49</option>
+                  <option>50-99</option>
+                  <option>100-249</option>
+                  <option>250-499</option>
+                  <option>500-999,1000-4999</option>
+                  <option>5000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-secondary btn-xl">Request Demo</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </header>
 
+<section id="home-testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-push-1 mb40 wow fadeIn">
+        <h3>Our Happy Customers</h3>
+      </div>
+
+      <div class="col-sm-10 no-padding col-sm-push-1 mb40 wow fadeIn">
+        <div class="col-sm-6">
+          <div class="text">
+            <p>TalkM is clean and easy to use. It is sleek, efficient, and reasonably priced.</p>
+            <h5>— Jenny</h5>
+          </div>
+          <div class="quotes">“</div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text">
+            <p>Revenue grows by 30% after adding TalkM as an additional communication channel.</p>
+            <h5>— Terrence Chandra</h5>
+          </div>
+          <div class="quotes">“</div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+</section>
+
 <section class="others">
   <div class="container">
     <div class="row">
-      <div class="col-sm-10 col-sm-push-1 no-padding wow fadeInUp">
+      <div class="col-sm-10 col-sm-push-1 no-padding wow fadeIn">
         <div class="col-sm-12">
           <h3>Products</h3>
           <hr>
         </div>
 
         <div class="col-sm-6 col-md-3">
-          <div class="card text-center wow fadeInUp">
+          <div class="card text-center wow fadeIn"   data-wow-delay="0s">
             <img src="img/talkm-products-livechat.png" alt="TalkM - Live Chat Icon" class="avatar img-responsive">
             <div class="text">
               <h4 class="mb20">Live Chat</h4>
@@ -143,7 +213,7 @@
         </div>
 
         <div class="col-sm-6 col-md-3">
-          <div class="card text-center wow fadeInUp">
+          <div class="card text-center wow fadeIn"   data-wow-delay="0.1s">
             <img src="img/talkm-products-customer-support.png" alt="TalkM - Customer Support Icon" class="avatar img-responsive">
             <div class="text">
               <h4 class="mb20">Ticket System</h4>
@@ -153,21 +223,21 @@
         </div>
 
         <div class="col-sm-6 col-md-3">
-          <div class="card text-center wow fadeInUp">
-            <img src="img/talkm-products-chatbot.png" alt="TalkM - Chatbot Icon" class="avatar img-responsive">
+          <div class="card text-center wow fadeIn"   data-wow-delay="0.2s">
+            <img src="img/talkm-products-analytics.png" alt="TalkM - Analytics Icon" class="avatar img-responsive">
             <div class="text">
-              <h4 class="mb20">Chatbot</h4>
-              <a href="chatbot.html" class="link">Learn more</a>
+              <h4 class="mb20">Analytics</h4>
+              <a href="analytics.html" class="link">Learn more</a>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 col-md-3">
-          <div class="card text-center wow fadeInUp">
-            <img src="img/talkm-products-analytics.png" alt="TalkM - Analytics Icon" class="avatar img-responsive">
+          <div class="card text-center wow fadeIn"   data-wow-delay="0.3s">
+            <img src="img/talkm-products-chatbot.png" alt="TalkM - Mobile SDK Icon" class="avatar img-responsive">
             <div class="text">
-              <h4 class="mb20">Analytics</h4>
-              <a href="analytics.html" class="link">Learn more</a>
+              <h4 class="mb20">Mobile SDK</h4>
+              <a href="mobile-sdk.html" class="link">Learn more</a>
             </div>
           </div>
         </div>
@@ -179,18 +249,6 @@
 
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-10 col-sm-push-1">
-        <div class="cta text-center wow fadeInUp">
-          <h3>Start your free trial</h3>
-          <p class="mb20">It’s easy to setup and you can cancel anytime!</p>
-          <div class="input-group subscribe wow fadeIn">
-            <input type="text" class="form-control" aria-label="Enter your email address" placeholder="Enter your email address">
-            <a class="input-group-addon btn btn-primary">Start Free Trial</a>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="col-sm-10 col-sm-push-1 footer-links">
         <div class="col-sm-5 col-sm-push-5 no-padding links">

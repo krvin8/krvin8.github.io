@@ -78,8 +78,13 @@ p {
 .text-faded {
     color: rgba(255, 255, 255, .7);
 }
-section, aside {
+section {
     padding: 60px 0;
+}
+
+aside {
+    padding: 50px 0 0;
+    margin-bottom: -50px;
 }
 
 input,
@@ -183,10 +188,10 @@ label {
     font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     color: #FFF;
-    background: url(../img/talkm-icon.png) no-repeat;
+    background: url(../img/Logo_Text_1-2.png) no-repeat;
     background-size: 100%;
-    width: 45px;
-    margin-top: 12px;
+    width: 130px;
+    margin-top: 17px;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
@@ -250,7 +255,7 @@ label {
     }
     .navbar-default.affix .navbar-header .navbar-brand {
         color: #192B54;
-        background: url(../img/talkm-icon.png) no-repeat;
+        background: url(../img/Logo_Text_1-2.png) no-repeat;
         background-size: 100%;
     }
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -306,12 +311,13 @@ label {
         width: 145px;
     }
     .navbar-default .navbar-header .navbar-brand {
-        background: url(../img/talkm-icon.png) no-repeat;
+        background: url(../img/Logo_Text_1-2.png) no-repeat;
         background-size: 100%;
-        width: 40px;
-        margin-top: 10px;
+        width: 100px;
+        height: 33px;
+        margin-top: 15px;
         margin-left: 15px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .navbar-default {
         -webkit-box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1);
@@ -373,7 +379,7 @@ label {
     position: relative;
     float: right;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-right: 15px;
     margin-bottom: 0;
     border: none;
@@ -463,7 +469,7 @@ header {
     text-align: center;
     color: #fff;
     background: #f8f9fe;
-    background-image: url(../img/TalkM_Background-hi2.png);
+    background-image: url(../img/TalkM_Background-hi3.png);
     background-position: center;
     /*background-attachment: fixed;*/
     -webkit-background-size: cover;
@@ -684,7 +690,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .cta {
-    background: #192B54;
+    background: url("../img/cta-bg.jpg") #172669;
+    background-size: cover;
     padding: 40px 30px 70px;
     color: #fff;
     -webkit-box-shadow: 0 20px 60px rgba(0,0,0,0.3);
@@ -932,6 +939,10 @@ img::-moz-selection {
 .page-home h4 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+#home-products {
+    background: #fff;
 }
 
 #home-testimonials {
@@ -1489,26 +1500,26 @@ img::-moz-selection {
 
 /*------------------------ FOOTER ---------------------*/
 footer {
-    background: #192a75;
+    background: #E1E4EC;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    padding-top: 90px;
 }
 footer a {
-    color: #8c98d4;
+    color: #192B54;
     text-decoration: none;
 }
 footer a:hover {
-    color: #fff;
+    color: #0853ff;
 }
 footer .copyright p {
-    color: #8c98d4;
-    font-size: 12px;
+    color: #192B54;
+    font-size: 14px;
     margin: 20px 0;
-    letter-spacing: 1px;
 }
 footer .footer-links {
     margin: 40px 0;
@@ -1527,16 +1538,36 @@ footer .social-media {
 footer .social-media a {
     text-align: center;
     text-decoration: none;
+    color: #fff;
 }
 footer .social-media .fa {
     height: 40px;
     width: 40px;
-    background: #192a75;
+    background: #1d253a;
     display: table-cell;
     vertical-align: middle;
     border-radius: 50%;
     font-size: 16px;
 }
+footer .contact_details {
+    padding: 30px 15px;
+    background: #1c243a;
+    overflow: hidden;
+}
+footer .contact_details label {
+    margin-bottom: 5px;
+    color: #b3bfe0;
+}
+footer .contact_details hr {
+    border-color: #4b5673;
+}
+footer .contact_details a {
+    color: #fff;
+}
+       #map {
+        height: 400px;
+        width: 100%;
+       }
 
 /*------------------------ MEDIA QUERIES ---------------------*/
 @media (max-width: 991px) {

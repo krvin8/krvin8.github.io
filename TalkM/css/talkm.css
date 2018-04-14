@@ -904,14 +904,14 @@ img::-moz-selection {
     padding: 15px 30px !important;
     width: 200px;
 }
-.page-home #home-products .text {
+.page-home #home-products .text,
+.page-product #home-products .text {
     display: table-cell;
     vertical-align: middle;
     height: 300px;
 }
 .page-home #home-products .avatar img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
 }
 .page-home .text p {
     font-size: 16px;
@@ -960,8 +960,16 @@ img::-moz-selection {
     -webkit-text-fill-color: transparent;
 }
 
-#home-products {
+.page-home #home-products {
     background: #fff;
+}
+#home-products {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f9fe+0,ffffff+56 */
+    background: #fff; /* Old browsers */
+    background: -moz-linear-gradient(top, #f8f9fe 0%, #ffffff 56%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f8f9fe 0%,#ffffff 56%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f8f9fe 0%,#ffffff 56%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fe', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 #home-testimonials {
@@ -1667,7 +1675,8 @@ footer .social-media a {
     text-decoration: none;
     color: #fff;
 }
-footer .social-media .fa {
+footer .social-media .fa,
+footer .social-media .fab {
     height: 40px;
     width: 40px;
     background: #1d253a;

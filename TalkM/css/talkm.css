@@ -32,6 +32,7 @@ h4,
 h5 {
     font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
     color: #192b54;
+    font-weight: 600;
 }
 h6 {
     font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -40,7 +41,6 @@ h6 {
 h2 {
     color: #192b54;
     font-size: 40px;
-    font-weight: 600;
     margin-bottom: 20px;
 }
 /*h3 {
@@ -48,7 +48,7 @@ h2 {
 }*/
 
 hr {
-    border-color: #eee;
+    border-color: #e9ebf9;
 }
 p {
     margin-bottom: 20px;
@@ -583,9 +583,9 @@ header .header-content .header-content-inner p {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 15px 25px rgba(208, 66, 46, 0.2);
+    -moz-box-shadow: 0 15px 25px rgba(208, 66, 46, 0.2);
+    box-shadow: 0 15px 25px rgba(208, 66, 46, 0.2);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1700,10 +1700,18 @@ footer .contact_details hr {
 footer .contact_details a {
     color: #fff;
 }
-       #map {
-        height: 400px;
-        width: 100%;
-       }
+#map {
+    height: 400px;
+    width: 100%;
+}
+.krvin {
+    font-size: 11px;
+    color: #a4acc1;
+}
+.krvin a {
+    color: #6c7a92;
+    font-weight: 600;
+}
 
 /*------------------------ MEDIA QUERIES ---------------------*/
 @media (max-width: 991px) {

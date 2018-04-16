@@ -423,7 +423,7 @@ label {
     border: none;
     min-width: 200px;
 }
-.nav .dropdown-menu::before {
+/*.nav .dropdown-menu::before {
     content: "\f0d8";
     font-family: FontAwesome;
     position: absolute;
@@ -431,7 +431,7 @@ label {
     font-size: 34px;
     right: 30%;
     color: #fff;
-}
+}*/
 .nav .dropdown-menu li {
     padding: 5px 0;
 }
@@ -637,7 +637,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-    background: #242B82;
+    background: #4eb1fe;
     color: #fff;
 }
 
@@ -1052,7 +1052,17 @@ img::-moz-selection {
     margin-bottom: 10px;
 }
 .page-pricing .package {
-    height: 770px;
+    height: 800px;
+}
+.page-pricing .package.active h4, 
+.page-pricing .package.active h2 {
+    color: #f2533c;
+}
+.page-pricing .package.active p {
+    font-weight: 600;
+    /* color: #ccc; */
+    text-transform: uppercase;
+    font-size: 12px;
 }
 .page-pricing .package.active .fa {
     color: #f2533c;
@@ -1087,9 +1097,6 @@ img::-moz-selection {
 }
 .page-register header .header-content-inner h1 {
     font-size: 32px !important;
-}
-.page-register header .header-content-inner p {
-    font-weight: 200 !important;
 }
 
 .page-register .bg-image-left-laptop {
@@ -2022,6 +2029,7 @@ footer .contact_details a {
         height: 100px;
         float: left;
     }
+
     .page-pricing .package .text {
         float: left;
         text-align: left;

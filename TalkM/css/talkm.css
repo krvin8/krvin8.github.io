@@ -1300,6 +1300,17 @@ img::-moz-selection {
 .page-terms section {
     padding: 0;
 }
+.page-terms.cookie table {
+
+}
+.page-terms.cookie td,
+.page-terms.cookie th {
+    border: 1px solid #DDD;
+    padding: 10px;
+}
+.page-terms.cookie th {
+    background: #F5F5F5;
+}
 
 
 @-webkit-keyframes bounce {
@@ -1826,6 +1837,13 @@ footer .contact_details a {
     .text p {
         font-size: 16px;
         line-height: 28px;
+    }
+
+    .page-terms.cookie .cookie-table {
+        overflow-x: auto;
+    }
+    .page-terms.cookie table {
+        width: 1000px;
     }
 
 /*    .carousel-inner,

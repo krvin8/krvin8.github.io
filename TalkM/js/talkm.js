@@ -27,6 +27,10 @@
         $('.navbar-toggle:visible').click();
     });
 
+    $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {

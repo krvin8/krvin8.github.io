@@ -1733,6 +1733,10 @@ footer .contact_details a {
 
 /*------------------------ MEDIA QUERIES ---------------------*/
 @media (max-width: 991px) {
+    .navbar-default .nav > li> .btn-outline-primary {
+        margin: 15px;
+    }
+
     .block-txt,
     .contact-box .block-txt {
         height: auto;
@@ -1813,7 +1817,7 @@ footer .contact_details a {
         margin-right: 0;
     }
     .nav .dropdown-menu {
-        display: block !important;
+        /*display: block;*/
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -1829,7 +1833,23 @@ footer .contact_details a {
     }
 }
 
+
 @media (max-width: 767px) {
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    .open .dropdown-menu {
+        display: block !important;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #333;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #fff;
+        background-color: #0853ff;
+    }
+
     h2 {
         font-size: 30px;
     }
@@ -1934,12 +1954,12 @@ footer .contact_details a {
     }
 
     .page-home #home-products .avatar img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: auto;
     }
 
     #home-testimonials {
-        padding: 0;
+        padding: 30px 0 0;
     }
     #home-testimonials .text {
         position: relative;
@@ -1960,6 +1980,7 @@ footer .contact_details a {
     .pricing-comparison table {
         width: 100%;
         margin: -1px;
+        display: none;
     }
     .cta {
         padding: 20px 20px 40px;

@@ -1052,7 +1052,7 @@ img::-moz-selection {
     margin-bottom: 10px;
 }
 .page-pricing .package {
-    height: 800px;
+    height: 770px;
 }
 .page-pricing .package.active h4, 
 .page-pricing .package.active h2 {
@@ -1070,8 +1070,17 @@ img::-moz-selection {
 .page-pricing .package .fa {
     color: #2CA01C;
 }
+.page-pricing .package .avatar {
+    margin-top: 40px;
+}
+.page-pricing .package.active .avatar {
+    margin-top: 0;
+}
 #pricing .header-content .header-content-inner {
     width: 820px;
+}
+.pricing-table {
+    display: block;
 }
 
 
@@ -1780,9 +1789,6 @@ footer .contact_details a {
         margin: 0 auto !important;
     }
 
-    .page-pricing .package {
-        height: 720px;
-    }
 
     .page-register .bg-image-right-people img {
         width: 320px;
@@ -1864,6 +1870,19 @@ footer .contact_details a {
     }
     .page-terms.cookie table {
         width: 1000px;
+    }
+
+    .page-pricing .package .avatar {
+        margin-top: 0;
+    }
+    .page-pricing .package.active p {
+        text-align: left;
+        margin-left: 120px;
+        float: left;
+        margin-bottom: 0;
+    }
+    .page-pricing .package.active .avatar {
+        margin-top: -10px;
     }
 
 /*    .carousel-inner,

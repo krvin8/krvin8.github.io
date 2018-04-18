@@ -22,17 +22,6 @@
 		offset: 51
 	})
 
-	// Closes the Responsive Menu on Menu Item Click
-	// $('.navbar-collapse ul li a').click(function() {
-	//     $('.navbar-toggle:visible').click();
-	//     console.log("1");
-	// });
-
-	// $(".navbar-nav li a").click(function(event) {
-	//     $(".navbar-collapse").collapse('hide');
-	//     console.log("2");
-	//   });
-
 	// Offset for Main Navigation
 	$('#mainNav').affix({
 		offset: {
@@ -66,6 +55,10 @@ $(".open").click(function() {
   }
 });
 
+// jQuery('.tablenavli.active').click(function() {
+// 	console.log("1");
+// });
+
 jQuery(document).ready(function($) {
   $('.question').each(function() {
 		$(this).attr('data-search-term', $(this).text().toLowerCase() + $(this).find("ptag").text().toLowerCase());
@@ -88,6 +81,7 @@ jQuery(document).ready(function($) {
 	  $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
 	});
 
+
 	$(".showTable").click(function(){
 		$("#pricing-table").show();
 	});
@@ -99,7 +93,6 @@ jQuery(document).ready(function($) {
 		$("tr").find('th:not(:eq(0))').hide();
 		$('li').removeClass('active');
 		$(this).addClass('active');
-		console.log("hello");
 	});
 
 	// Initialize the media query
@@ -292,3 +285,7 @@ function initMap() {
     map: map
   });
 }
+
+$(document).ready(function(){
+    $("#defaultProduct").trigger('click'); 
+});

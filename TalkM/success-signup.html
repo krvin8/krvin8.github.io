@@ -10,13 +10,14 @@
   <meta name="description"    content="">
   <meta name="author"         content="Kervin Tan">
 
-  <title>Get Started | TalkM</title>
+  <title>Confirm Email | TalkM</title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,500,600,700" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -34,7 +35,7 @@
         <![endif]-->
 </head>
 
-<body id="page-top" class="page-register">
+<body id="page-top" class="page-register success">
 
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-block">
     <div class="container">
@@ -52,7 +53,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="link">
-          <p>Already have an account? <a href="login.html">Login</a></p>
+          <p>Don’t have an account? <a href="register.html">Sign up</a></p>
         </div>
       </div>
       <!-- /.navbar-collapse -->
@@ -71,71 +72,18 @@
 
   <div class="header-content">
     <div class="header-content-inner text-center wow fadeIn">
-      <h1>Start your free trial for 30 days!</h1>
-        <p>All you need to do is register an account with us.</p>
+      <i class="fas fa-check-circle"></i>
+      <h1>Success!</h1>
+      <p>Your account has been created successfully. Please check your email to activate your account.</p>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-sm-push-3 wow fadeIn">
-        <form action="success-signup.html" method="post" class="reg-form">
-
-          <div class="col-sm-12 form-group no-padding">
-            <label>Full Name</label>
-            <input type="text" name="reg_name" placeholder="Your full name">
-          </div>
-
-          <div class="col-sm-12 form-group no-padding">
-            <label>Email Address</label>
-            <input type="email" name="reg_email" placeholder="Ex: your@email.com">
-          </div>
-
-          <div class="col-sm-12 form-group no-padding">
-            <label>Contact Number</label>
-            <input type="number" name="reg_contact" placeholder="Ex: +63 123 456 7890">
-          </div>
-
-          <div class="col-sm-12 form-group no-padding">
-            <label>Password</label>
-            <input type="password" name="reg_pass" placeholder="Password should be at least 8 characters">
-          </div>
-
-          <div class="col-sm-12 form-group no-padding">
-            <label>Company Name</label>
-            <input type="text" name="reg_company" placeholder="Your app/company name">
-          </div>
-
-          <div class="col-sm-12 form-group no-padding">
-            <label>Company URL</label>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="your-company-url">
-                <span class="input-group-addon">.talkm.com</span>
-            </div>
-          </div>
-
-          <div class="col-sm-12 form-group no-padding">
-            <label for="sel1">Company Size</label>
-            <select class="form-control" id="sel1">
-              <option>1-9</option>
-              <option>10-49</option>
-              <option>50-99</option>
-              <option>100-249</option>
-              <option>250-499</option>
-              <option>500-999</option>
-              <option>1000-4999</option>
-              <option>5000+</option>
-            </select>
-          </div>
-
-          <label class="instructions">
-            By clicking “Sign Up”, I agree to TalkM’s <a href="master-subscription.html" target="_blank">Master Subscription Agreement</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.
-          </label>
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-secondary btn-xl">Sign Up</button>
-          </div>
-        </form>
+        <div class="text-center">
+          <a href="login.html" class="btn btn-secondary btn-xl">Back to Login</a>
+        </div>
       </div>
         
         

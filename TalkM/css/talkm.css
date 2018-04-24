@@ -952,13 +952,19 @@ img::-moz-selection {
     padding: 60px 0 0;
     margin-bottom: -120px;
 }
-#home-benefits .fas {
+#home-benefits img.avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/*#home-benefits .fas {
     font-size: 30px;
     margin: 10px 0;
     background: -webkit-linear-gradient(#7abcff, #4096ee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+}*/
 
 .page-home #home-products {
     background: #fff;
@@ -1126,6 +1132,18 @@ img::-moz-selection {
 .page-register .bg-image-right-people img {
     width: 460px;
 }
+.page-register .fas {
+    background: -webkit-linear-gradient(#7abcff, #0853ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.page-register.error .avatar {
+    width: 310px;
+    height: 310px;
+}
+
 .reg-form {
     text-align: left;
     width: 420px;
@@ -1938,7 +1956,11 @@ footer .contact_details a {
     .page-register header .header-content {
         padding: 250px 15px 0;
     }
-    .page-register .bg-image-left-laptop {
+    .page-register.success header .header-content {
+        padding: 120px 15px 0;
+    }
+    .page-register .bg-image-left-laptop,
+    .page-register.success .bg-image-right-people {
         display: none;
     }
     .page-register .bg-image-right-people {

@@ -1896,7 +1896,7 @@ footer .contact_details a {
     .page-pricing .package.active p {
         text-align: left;
         margin-left: 120px;
-        float: left;
+        float: none;
         margin-bottom: 0;
     }
     .page-pricing .package.active .avatar {

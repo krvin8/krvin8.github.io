@@ -1143,6 +1143,9 @@ img::-moz-selection {
     width: 310px;
     height: 310px;
 }
+.page-register.success label {
+    color: #909CB9;
+}
 
 .reg-form {
     text-align: left;

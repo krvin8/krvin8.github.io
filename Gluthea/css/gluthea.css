@@ -1372,6 +1372,13 @@ footer a:hover {
         margin-bottom: 30px;
         padding-bottom: 10px;
     }
+    .cd-faq-content li {
+        border-bottom: none;
+        margin-bottom: 10px;
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+
     ul.navbar-nav li:last-child {
         margin-left: 15px;
         margin-right: 15px;

@@ -848,27 +848,35 @@ header#contactus {
 }
 
 .cd-close-panel {
-  position: fixed;
-  top: 80px;
-  right: -100%;
-  display: block;
-  height: 40px;
-  width: 40px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  z-index: 2;
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: right 0.4s;
-  -moz-transition: right 0.4s;
-  transition: right 0.4s;
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    display: block;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: right 0.4s;
+    -moz-transition: right 0.4s;
+    transition: right 0.4s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: #f953c6;
+    background: -moz-linear-gradient(left, #f953c6 0%, #b91d73 100%);
+    background: -webkit-linear-gradient(left, #f953c6 0%,#b91d73 100%);
+    background: linear-gradient(to right, #f953c6 0%,#b91d73 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f953c6', endColorstr='#b91d73',GradientType=1 );
 }
 .cd-close-panel::before, .cd-close-panel::after {
   /* close icon in CSS */
@@ -882,12 +890,12 @@ header#contactus {
 }
 .cd-close-panel::before {
     position: absolute;
-    top: 16px;
-    left: 12px;
+    top: 19px;
+    left: 11px;
     display: inline-block;
     height: 3px;
     width: 18px;
-    background: #888;
+    background: #fff;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -896,12 +904,12 @@ header#contactus {
 }
 .cd-close-panel::after {
     position: absolute;
-    top: 16px;
-    left: 12px;
+    top: 19px;
+    left: 11px;
     display: inline-block;
     height: 3px;
     width: 18px;
-    background: #888;
+    background: #fff;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);

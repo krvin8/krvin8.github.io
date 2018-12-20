@@ -981,6 +981,9 @@ header#contactus {
     -webkit-transition: box-shadow 0.2s;
     -moz-transition: box-shadow 0.2s;
     transition: box-shadow 0.2s;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
   }
   .no-touch .cd-faq-group > li:hover {
     box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
@@ -1015,6 +1018,9 @@ header#contactus {
   a.cd-faq-trigger:hover,
   a.cd-faq-trigger:focus {
     color: #F54FBF;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.2);
   }
   .cd-faq-trigger::before, .cd-faq-trigger::after {
     /* arrow icon on the right */
@@ -1082,6 +1088,9 @@ header#contactus {
   }
 }
 
+.cta-mobile {
+    display: none;
+}
 .cta-small .card {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f852c5+0,fff9fd+100 */
     background: #f852c5; /* Old browsers */
@@ -1091,12 +1100,23 @@ header#contactus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f852c5', endColorstr='#fff9fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     height: 300px;
 }
-.cta-small h4 {
+.cta-mobile .card {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f852c5+0,fff9fd+100 */
+    background: #f852c5; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #f852c5 0%, #fff9fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #f852c5 0%,#fff9fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #f852c5 0%,#fff9fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f852c5', endColorstr='#fff9fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 220px;
+}
+.cta-small h4,
+.cta-mobile h4 {
     font-weight: 600;
     margin-bottom: 10px;
     line-height: 1.5;
 }
-.cta-small .fa-shopping-cart:before {
+.cta-small .fa-shopping-cart:before,
+.cta-mobile .fa-shopping-cart:before {
     content: "\f07a";
 }
 .cta-small .img {
@@ -1106,15 +1126,29 @@ header#contactus {
     height: 293px;
     right: 0;
 }
+.cta-mobile .img {
+    position: absolute;
+    bottom: 1px;
+    width: 193px;
+    height: 200px;
+    right: 15px;
+}
 .cta-small .text {
     padding: 70px 30px;
     width: 70%;
     position: absolute;
 }
-.cta-small .btn {
+.cta-mobile .text {
+    padding: 36px 20px;
+    width: 70%;
+    position: absolute;
+}
+.cta-small .btn,
+.cta-mobile .btn {
     font-weight: normal;
 }
-.cta-small .fas {
+.cta-small .fas,
+.cta-mobile .fas {
     margin-right: 5px;
 }
 
@@ -1348,20 +1382,12 @@ footer a:hover {
         left: 35px;
     }
 
+    .cta-mobile {
+        display: block;
+    }
+
     .cta-small {
-        padding: 15px;
-    }
-    .cta-small .card {
-        height: 260px;
-    }
-    .cta-small .img {
-        bottom: 46px;
-        width: 243px;
-        height: 251px;
-        right: 15px;
-    }
-    .cta-small .text {
-        padding: 50px 20px;
+        display: none;
     }
 
     .cd-faq-categories ul {

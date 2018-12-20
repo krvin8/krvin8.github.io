@@ -1328,13 +1328,13 @@ footer a:hover {
     }
     header#products {
         background-image: url(../img/gluthea-prouct-bg.jpg);
-        background-position: 10px;
+        background-position: -155px 40px;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        -webkit-background-size: 1440px 680px;
-        -moz-background-size: 1440px 680px;
-        background-size: 1440px 680px;
-        -o-background-size: 1440px 680px;
+        -webkit-background-size: 1280px 628px;
+        -moz-background-size: 1280px 628px;
+        background-size: 1280px 628px;
+        -o-background-size: 1280px 628px;
     }
     header#contactus {
         height: auto;

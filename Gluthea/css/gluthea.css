@@ -54,6 +54,7 @@ p {
     line-height: 1.5;
 }
 
+
 .mt0 { margin-top: 0px; }
 .mb10 { margin-bottom: 10px; }
 .mb20 { margin-bottom: 20px; }
@@ -820,6 +821,16 @@ header#contactus {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
+}
+
+.cd-faq-content ol, 
+.cd-faq-content ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.cd-faq-content ol > li, 
+.cd-faq-content ul > li {
+    margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-items {

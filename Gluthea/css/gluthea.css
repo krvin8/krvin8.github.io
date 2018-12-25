@@ -1495,7 +1495,7 @@ footer a:hover {
     display: block;
     opacity: 0.95;
     cursor: pointer;
-    background-image: linear-gradient(transparent, #000);
+    background-image: linear-gradient(transparent, #f1edf3);
     transition: opacity 150ms;
 }
 
@@ -1505,4 +1505,12 @@ footer a:hover {
 
 .video-overlay-play-button.is-hidden {
     display: none;
+}
+@media (max-width: 767px) {
+    .video-wrapper {
+        margin-top: 60px;
+    }
+    header#testimonials {
+        height: 195px;
+    }
 }

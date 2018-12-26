@@ -1363,6 +1363,29 @@ header#contactus {
     color: #80839e;
 }
 
+.thank-you header {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    text-align: left;
+    color: #150344;
+    background: #FFF9F9;
+    background-image: url(../img/gluthea-jinri-3.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: 564px 586px;
+    -moz-background-size: 564px 586px;
+    background-size: 564px 586px;
+    -o-background-size: 564px 586px;
+}
+.thank-you header .header-content {
+    padding: 120px 15px;
+}
+.thank-you .header-content .logo {
+    width: 200px;
+    margin-bottom: 60px;
+}
 
 /*------------------------ FOOTER ---------------------*/
 footer {
@@ -1493,6 +1516,21 @@ footer a:hover {
     }
     header#testimonials {
         height: 195px;
+    }
+
+    .thank-you header {
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        background-size: contain;
+        -o-background-size: contain;
+    }
+    .thank-you header .header-content {
+        padding: 40px 15px;
+        text-align: center;
+    }
+    .thank-you .header-content .logo {
+        width: 130px;
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 480px) {

@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://glutheacomplexdr.com/">
   <meta property="og:title" content="Contact Us | Gluthea Complex DR">
   <meta property="og:description" content="Gluthea Complex DR is a dietary supplement in capsule form. It provides nutritional support for detoxification and immune function, and supplies nutrients shown to be especially supportive for liver function and brain function.">
-  <meta property="og:image" content="https://krvin8.github.io/Gluthea/img/gluthea-seo.jpg">
+  <meta property="og:image" content="http://glutheacomplexdr.com/img/gluthea-seo.jpg">
 
   <title>Contact Us | Gluthea Complex DR</title>
 
@@ -110,20 +110,20 @@
 
       <div class="col-sm-6 mb30 wow fadeInUp">
         <div class="card card-body">
-          <form action="mail/contact.php" method="post" class="contact-form">
+          <form name="contactform" method="post" action="./mail/contact.php" class="contact-form">
             <div class="col-sm-12 form-group no-padding">
               <label>Full Name</label>
-              <input type="text" name="cf_name" placeholder="Your name" required>
+              <input type="text" name="first_name" placeholder="Your name" maxlength="50" size="30" required>
             </div>
 
             <div class="col-sm-12 form-group no-padding">
               <label>Email Address</label>
-              <input type="email" name="cf_email" placeholder="Your email address" required>
+              <input type="email" name="email" placeholder="Your email address" maxlength="80" size="30" required>
             </div>
 
             <div class="col-sm-12 form-group no-padding">
               <label>Message</label>
-              <textarea name="cf_message" placeholder="Your message or inquiry" rows="3" required></textarea>
+              <textarea name="comments" placeholder="Your message or inquiry" rows="3" maxlength="1000" cols="25" rows="6" required></textarea>
             </div>
 
             <div class="text-center">

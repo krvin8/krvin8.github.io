@@ -56,10 +56,10 @@ p {
 
 
 .mt0 { margin-top: 0px; }
-.mb10 { margin-bottom: 10px; }
-.mb20 { margin-bottom: 20px; }
-.mb30 { margin-bottom: 30px; }
-.mb60 { margin-bottom: 60px; }
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb60 { margin-bottom: 60px !important; }
 
 section, aside {
     padding: 60px 0;
@@ -510,14 +510,14 @@ header {
     text-align: left;
     color: #150344;
     background: #FFF9F9;
-    background-image: url(../img/gluthea-jinri-1.png);
+    /*background-image: url(../img/gluthea-jinri-1.png);
     background-position: bottom left;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: 720px 575px;
     -moz-background-size: 720px 575px;
     background-size: 720px 575px;
-    -o-background-size: 720px 575px;
+    -o-background-size: 720px 575px;*/
 }
 header .header-content {
     padding: 220px 15px ;
@@ -538,6 +538,90 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
     color: #150344;
+}
+
+
+#home-jinri {
+    height: 680px;
+    background: #FFF9F9;
+    background-image: url(../img/gluthea-jinri-1.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: 720px 575px;
+    -moz-background-size: 720px 575px;
+    background-size: 720px 575px;
+    -o-background-size: 720px 575px;
+}
+#home-jinri h1 {
+    font-size: 60px;
+    padding-top: 120px;
+}
+#home-jinri p {
+    font-size: 28px;
+}
+#home-jinri .note {
+    position: absolute;
+    bottom: -120px;
+}
+#home-jinri .note p {
+    font-size: 16px;
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+    80% { -webkit-transform: translateY(-10px); }
+}
+.arrow {
+    position: absolute;
+    margin: 0 auto;
+    bottom: -280px;
+    left: 0; right: 0;
+    width: 40px;
+    height: 180px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bubbles {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -1000%);
+            transform: translate(0, -1000%);
+  }
+}
+
+@keyframes bubbles {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -1000%);
+            transform: translate(0, -1000%);
+  }
+}
+.particletext.bubbles > .particle {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(253, 207, 238);
+  -webkit-animation: bubbles 3s ease-in infinite;
+          animation: bubbles 3s ease-in infinite;
+  border-radius: 100%;
 }
 
 
@@ -1276,7 +1360,26 @@ header#contactus {
 }
 
 /*------------------------ TESTIMONIALS ---------------------*/
-.video-wrapper {
+.videoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; 
+}
+
+/*.video-wrapper {
     position: relative;
 }
 
@@ -1310,7 +1413,7 @@ header#contactus {
 
 .video-overlay-play-button.is-hidden {
     display: none;
-}
+}*/
 
 
 /*------------------------ CONTACT US ---------------------*/
@@ -1429,11 +1532,41 @@ footer a:hover {
         font-size: 16px;
     }
 
+    header.particletext {
+        height: 100vh;
+    }
+    .arrow {
+        height: 80px;
+    }
     header .header-content {
         padding: 120px 15px 80px;
     }
     header .header-content .header-content-inner p {
         margin-top: 30px;
+        font-size: 20px;
+    }
+    #home-jinri {
+        background-image: url(../img/gluthea-jinri-1.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: 380px;
+        -moz-background-size: 380px;
+        background-size: 380px;
+        -o-background-size: 380px;
+    }
+    #home-jinri .note {
+        position: relative;
+        bottom: -20px;
+    }
+    #home-jinri .header-content-inner {
+        text-align: center;
+    }
+    #home-jinri h1 {
+        padding-top: 0;
+        font-size: 36px;
+    }
+    #home-jinri p {
         font-size: 20px;
     }
     header#products {
@@ -1516,6 +1649,7 @@ footer a:hover {
     }
     header#testimonials {
         height: 195px;
+        margin-top: 60px;
     }
 
     .thank-you header {
@@ -1536,7 +1670,10 @@ footer a:hover {
 @media (max-width: 480px) {
 
     header .header-content {
-        padding: 90px 50px 60px;
+        padding: 180px 50px ;
+    }
+    .arrow {
+        bottom: -190px;
     }
     header .header-content .header-content-inner h1 {
         font-size: 36px;

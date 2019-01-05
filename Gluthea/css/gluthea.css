@@ -544,7 +544,7 @@ header .header-content .header-content-inner p {
 #home-jinri {
     height: 680px;
     background: #FFF9F9;
-    background-image: url(../img/gluthea-jinri-1.png);
+    background-image: url(../img/gluthea-jinri-1.jpg);
     background-position: bottom left;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1546,7 +1546,7 @@ footer a:hover {
         font-size: 20px;
     }
     #home-jinri {
-        background-image: url(../img/gluthea-jinri-1.png);
+        background-image: url(../img/gluthea-jinri-1.jpg);
         background-position: bottom center;
         background-repeat: no-repeat;
         background-attachment: fixed;

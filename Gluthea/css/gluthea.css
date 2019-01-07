@@ -1575,6 +1575,10 @@ footer a:hover {
     #home-jinri p {
         font-size: 20px;
     }
+    #clients {
+        background: #FFF9F9;
+        background-image: none;
+    }
     header#products {
         background-image: url(../img/gluthea-prouct-bg.jpg);
         background-position: -155px 40px;

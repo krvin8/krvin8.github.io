@@ -506,7 +506,8 @@ ul.navbar-nav li:last-child {
 header {
     position: relative;
     width: 100%;
-    height: 680px;
+    min-height: 680px;
+    height: 100vh;
     text-align: left;
     color: #150344;
     background: #FFF9F9;
@@ -1250,14 +1251,19 @@ header#contactus {
 }
 
 #clients {
-    background-image: url(../img/gluthea-bg-2.png);
-    background-position: center;
+    background-image: url(../img/gluthea-jinri-1.jpg);
+    background-position: bottom left;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: 570px 450px;
+    -moz-background-size: 570px 450px;
+    background-size: 570px 450px;
+    -o-background-size: 570px 450px;
+    height: auto;
+}
+#clients .row {
+    margin-top: 200px;
+    margin-bottom: 60px;
 }
 #clients .img {
     width: 90px;
@@ -1549,7 +1555,7 @@ footer a:hover {
         background-image: url(../img/gluthea-jinri-1.jpg);
         background-position: bottom center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: inherit;
         -webkit-background-size: 380px;
         -moz-background-size: 380px;
         background-size: 380px;
@@ -1582,6 +1588,14 @@ footer a:hover {
     header#contactus {
         height: auto;
         padding-top: 90px;
+    }
+
+    #clients .row {
+        margin-top: 110px;
+        margin-bottom: 0;
+    }
+    #clients .row .col-sm-8.col-sm-push-4 {
+        padding: 0;
     }
 
     .card-body {

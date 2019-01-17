@@ -48,7 +48,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "glutheacomplexdr@gmail.com";
+    $email_to = "kervintanph@gmail.com";
     $email_subject = "Gluthea Website Inquiry";
  
     function died($error) {

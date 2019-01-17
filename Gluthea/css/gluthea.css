@@ -708,6 +708,19 @@ header#contactus {
     position: absolute;
     left: 55px;
 }
+.cd-faq-content.health ul {
+    padding-left: 10px;
+}
+.cd-faq-content.health li {
+    list-style: none;
+}
+.cd-faq-content.health li:before {
+    content: "";
+    background: url(../img/gluthea-check.svg) no-repeat left center;
+    padding: 15px 20px;
+    width: 32px;
+    height: 32px;
+}
 
 
 

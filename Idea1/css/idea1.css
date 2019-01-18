@@ -584,13 +584,13 @@ ol, ul {
     line-height: 1.8;
 }
 
-#contact .card {
+#contact-details .card {
     height: 220px;
 }
-#contact .card p {
+#contact-details .card p {
     font-size: 16px;
 }
-#contact .icon {
+#contact-details .icon {
     position: absolute;
     bottom: 30px;
     right: 15px;

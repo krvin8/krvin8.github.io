@@ -527,15 +527,23 @@ header .header-content .header-content-inner p {
 #agency {
     height: 100vh;
 }
-#agency .main-video {
+#agency .header-content {
+    padding-top: 180px;
+}
+/*#agency .main-video {
     position: absolute;
     z-index: -100;
     right: 30px;
     top: 140px;
-}
+}*/
 #agency .main-video .card {
-    height: 380px;
+    /*height: 380px;*/
+    height: 515px;
     background: #ddd;
+    overflow: hidden;
+}
+#agency video {
+  width: 100%;
 }
 
 #our-journey .card {
@@ -1001,6 +1009,19 @@ footer a:hover {
         margin-bottom: 30px;
     }
 
+    #agency {
+        height: 470px;
+    }
+    #agency .header-content {
+        padding-top: 160px;
+    }
+    #agency .main-video .card {
+        height: 200px;
+    }
+
+    #our-journey {
+        padding-bottom: 0;
+    }
     #our-journey .bg {
         bottom: 0;
     }

@@ -1120,7 +1120,7 @@ footer a:hover {
 }
 @media (max-width: 480px) {
     #agency {
-        height: 470px;
+        height: 530px;
     }
     #agency .main-video {
         padding: 0 15px;
@@ -1128,8 +1128,17 @@ footer a:hover {
     #agency .main-video .card {
         height: 200px;
     }
+    #our-journey,
+    #featured,
+    #openings,
+    #contact-details {
+        padding-top: 0;
+    }
+    #contact-details .card {
+        margin-bottom: 10px;
+    }
     header {
-        min-height: 330px;
+        min-height: 290px;
     }
     header .header-content {
         padding: 160px 0px 0;

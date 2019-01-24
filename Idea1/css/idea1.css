@@ -542,7 +542,7 @@ header .header-content .header-content-inner p {
 #agency .main-video .card {
     /*height: 380px;*/
     height: 515px;
-    background: #ddd;
+    background: #000;
     overflow: hidden;
 }
 #agency video {

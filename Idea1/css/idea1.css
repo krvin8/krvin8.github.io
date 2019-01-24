@@ -1120,7 +1120,7 @@ footer a:hover {
 }
 @media (max-width: 480px) {
     #agency {
-        height: 530px;
+        height: auto !important;
     }
     #agency .main-video {
         padding: 0 15px;

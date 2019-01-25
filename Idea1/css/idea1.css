@@ -74,6 +74,18 @@ p {
 .mb60 { margin-bottom: 60px !important; }
 .mb80 { margin-bottom: 80px !important; }
 
+.text-red {
+    color: #c12a2f;
+}
+.bg-i {
+    background: url(../img/i.png) no-repeat 0px 13px;
+    background-size: 20px;
+}
+.bg-i-small {
+    background: url(../img/i.png) no-repeat 0px;
+    background-size: 14px;
+}
+
 section, aside {
     padding: 60px 0;
 }
@@ -173,12 +185,7 @@ label {
 }
 .btn-primary {
     color: #fff;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb199+0,ff0844+100 */
-    background: #ffb199; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ffb199 0%, #ff0844 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ffb199 0%,#ff0844 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ffb199 0%,#ff0844 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb199', endColorstr='#ff0844',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #c12a2f; 
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -188,11 +195,7 @@ label {
 .btn-primary:active {
     color: #fff;
     opacity: 0.9;
-    background: #ffb199; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ffb199 0%, #ff0844 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ffb199 0%,#ff0844 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ffb199 0%,#ff0844 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb199', endColorstr='#ff0844',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #c12a2f;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -202,7 +205,7 @@ label {
     transform: translate3d(0,-2px,0);
 }
 
-.btn-secondary {
+/*.btn-secondary {
     background: #150045;
     color: #fff;
 }
@@ -211,7 +214,7 @@ label {
 .btn-secondary:focus {
     background: #242B82;
     color: #fff;
-}
+}*/
 
 ::-moz-selection {
     text-shadow: none;
@@ -550,12 +553,7 @@ header .header-content .header-content-inner p {
 }
 
 #our-journey .card {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb199+0,ff0844+100 */
-    background: #ffb199; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ffb199 0%, #ff0844 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ffb199 0%,#ff0844 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ffb199 0%,#ff0844 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb199', endColorstr='#ff0844',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #c12a2f; 
     -webkit-box-shadow: 0px 20px 80px -10px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 20px 80px -10px rgba(0,0,0,0.3);
     box-shadow: 0px 20px 80px -10px rgba(0,0,0,0.3);
@@ -571,11 +569,12 @@ header .header-content .header-content-inner p {
     position: relative;
     z-index: 10;
 }
-#our-journey .bg {
+/*#our-journey .bg {
     position: absolute;
     bottom: 30px;
     right: 15px;
-}
+    opacity: 0.3;
+}*/
 
 #brands .clients {
     margin-bottom: 30px;
@@ -615,11 +614,7 @@ ol, ul {
 
 .divider {
     margin: 0 0 30px;
-    background: #ffb199;
-    background: -moz-linear-gradient(-45deg, #ffb199 0%, #ff0844 100%);
-    background: -webkit-linear-gradient(-45deg, #ffb199 0%,#ff0844 100%);
-    background: linear-gradient(135deg, #ffb199 0%,#ff0844 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb199', endColorstr='#ff0844',GradientType=1 );
+    background: #c12a2f;
     width: 100%;
     height: 20px;
     -webkit-border-radius: 50px;
@@ -755,7 +750,7 @@ ol, ul {
 }
 
 
-.card-video {
+/*.card-video {
     height: 230px;
     text-align: center;
 }
@@ -780,12 +775,12 @@ ol, ul {
     -webkit-transition: all .15s;
     font-size: 22px;
     line-height: 15px;
-}
+}*/
 
 
 
 /*------------------------ TESTIMONIALS ---------------------*/
-.videoContainer {
+/*.videoContainer {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -799,10 +794,9 @@ ol, ul {
   align-items: center;
 }
 iframe {
-  /* optional */
   width: 100%;
   height: 100%; 
-}
+}*/
 
 /*.video-wrapper {
     position: relative;

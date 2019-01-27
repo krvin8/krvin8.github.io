@@ -1115,13 +1115,13 @@ footer a:hover {
     .bg-i {
         background: url(../img/i.png) no-repeat 0px 4px;
         background-size: 13px;
-        top: -3px;
+        top: -5px;
         position: relative;
     }
     .bg-i-small {
         background: url(../img/i.png) no-repeat 0px 4px;
         background-size: 9px;
-        top: -3px;
+        top: -5px;
         position: relative;
     }
 }

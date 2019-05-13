@@ -574,7 +574,7 @@ header .header-content h1 {
 
 /*-------------------------- CONTACT -------------------------*/
 #contact {
-    padding: 140px 0 200px;
+    padding: 140px 0 0;
 }
 #contact h2 a {
     color: #fff;
@@ -623,7 +623,6 @@ header .header-content h1 {
 
 /*------------------------ FOOTER ---------------------*/
 footer {
-    background: #ffffff;
     color: #201F1F;
     padding-top: 80px;
 }
@@ -635,12 +634,12 @@ footer a {
     text-decoration: underline;
 }
 footer a:hover {
-    color: #111011;
+    color: #111010;
 }
 .copyright {
-    color: #201F1F;
+    color: #626262;
     font-size: 10px;
-    margin: 40px 0;
+    margin: 180px 0 40px;
 }
 
 

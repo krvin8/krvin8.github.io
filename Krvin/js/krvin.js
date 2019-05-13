@@ -47,27 +47,5 @@
 
 })(jQuery); // End of use strict
 
-function shopDropdown1() {
-  document.getElementById("dropdownShop1").classList.toggle("show");
-}
-function shopDropdown2() {
-    console.log('1');
-  document.getElementById("dropdownShop2").classList.toggle("show");
-}
-
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 

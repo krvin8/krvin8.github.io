@@ -685,7 +685,7 @@ footer a:hover {
 
     .card {
         padding: 20px;
-        height: 400px;
+        height: 420px;
         margin-bottom: 15px;
         position: relative;
     }
@@ -714,35 +714,35 @@ footer a:hover {
         right: 0;
     }
     #project-biomark .bg {
-        height: 400px;
+        height: 420px;
     }
     #project-biomark .app {
-        height: 320px;
+        height: 340px;
         width: 40%;
         top: 70px;
         right: 25px;
     }
     #project-edukasyon .bg {
         width: 90%;
-        height: 400px;
+        height: 420px;
     }
     #project-talkm .bg {
-        height: 400px;
+        height: 420px;
         width: 100%;
         top: 0;
     }
     #project-talkm .illustration {
         width: 60%;
-        height: 400px;
+        height: 420px;
         /*right: 25px;*/
     }
     #project-gluthea .bg {
         width: 60%;
-        height: 400px;
+        height: 420px;
         bottom: 0;
     }
     #project-gluthea .jinri {
-        height: 400px;
+        height: 420px;
         width: 36%;
     }
 
@@ -751,7 +751,7 @@ footer a:hover {
     }
 
     #contact {
-        padding: 40px 0 80px;
+        padding: 40px 0 0;
     }
     #contact li {
         width: 32px;
@@ -800,14 +800,23 @@ footer a:hover {
         top: 55%;
     }
 
+    .copyright {
+        margin: 60px 0 40px;
+    }
+
 }
 @media (max-width: 480px) {
     h2 {
         margin-bottom: 20px !important;
     }
+
+ 
     #experience h2 {
         margin-bottom: 80px !important;
-    }
+    }    
+    #experience .tools h2 {
+        margin-bottom: 0 !important;
+    }   
 
     #project-biomark .bg,
     #project-edukasyon .bg,
@@ -826,6 +835,7 @@ footer a:hover {
         width: 56%;
         right: 15px;
     }
+
 
 }
 

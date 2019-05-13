@@ -302,11 +302,7 @@ img {
     .navbar-default .nav > li.active>a, .navbar-default .nav>li.active>a:focus,
     .navbar-default .nav > li.active>a:hover, .navbar-default .nav>li.active>a:focus:hover {
         color: #fff !important;
-        background: #f953c6;
-        background: -moz-linear-gradient(left, #f953c6 0%, #b91d73 100%);
-        background: -webkit-linear-gradient(left, #f953c6 0%,#b91d73 100%);
-        background: linear-gradient(to right, #f953c6 0%,#b91d73 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f953c6', endColorstr='#b91d73',GradientType=1 );
+        background: transparent;
         border-bottom: none;
     }
     .navbar-default .nav > li>a:hover, .navbar-default .nav>li>a:focus:hover {
@@ -446,17 +442,17 @@ header .header-content h1 {
 }
 #project-biomark .app {
     background: url(../img/project-biomark-app.png) no-repeat;
-    background-position: top left;
+    background-position: bottom; left;
     background-size: 100%;
-    height: 480px;
+    height: 460px;
     width: 45%;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 35px;
 }
 #project-edukasyon .bg {
     background: url(../img/project-edukasyon-bg.png) no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size: 100%;
     height: 480px;
     width: 89%;
@@ -469,22 +465,22 @@ header .header-content h1 {
 }
 #project-talkm .bg {
     background: url(../img/project-talkm-bg.png) no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size: 100%;
     height: 480px;
     width: 97%;
     position: absolute;
-    top: 34px;
+    top: 0;
     right: 15px;
 }
 #project-talkm .illustration {
     background: url(../img/project-talkm-illustration.png) no-repeat;
-    background-position: top left;
+    background-position: bottom center;
     background-size: 100%;
     height: 480px;
     width: 48%;
     position: absolute;
-    top: 160px;
+    top: 0;
     right: 15px;
 }
 #project-gluthea {
@@ -492,22 +488,22 @@ header .header-content h1 {
 }
 #project-gluthea .bg {
     background: url(../img/project-gluthea-bg.png) no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size: 100%;
     height: 480px;
     width: 50%;
     position: absolute;
-    bottom: -94px;
+    top: 0;
     right: 15px;
 }
 #project-gluthea .jinri {
     background: url(../img/project-gluthea-jinri.png) no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size: 100%;
     height: 480px;
     width: 40%;
     position: absolute;
-    top: 58px;
+    top: 0;
     right: 55px;
 }
 
@@ -545,6 +541,7 @@ header .header-content h1 {
     position: absolute;
     right: 55px;
     font-size: 24px;
+    top: 40%;
     -webkit-transition: all .15s;
     -moz-transition: all .15s;
     -ms-transition: all .15s;
@@ -652,6 +649,14 @@ footer a:hover {
     header .header-content {
         padding: 150px 15px 120px;
     }
+    h2 {
+        line-height: 1.2;
+        margin-bottom: 40px !important;
+    }
+
+    .card .btn {
+        left: 55px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -663,6 +668,11 @@ footer a:hover {
     }
     header .header-content h1 {
         font-size: 22px;
+        margin-bottom: 20px !important;
+        margin-top: 60px;
+    }
+    #about .header-content h1 {
+        margin-top: 20px;
     }
 
     section {
@@ -673,6 +683,7 @@ footer a:hover {
         padding: 20px;
         height: 400px;
         margin-bottom: 15px;
+        position: relative;
     }
     .card h2{
         margin: 10px 0;
@@ -691,43 +702,44 @@ footer a:hover {
         left: 15px;
     }
 
+    #project-biomark .bg,
+    #project-edukasyon .bg,
+    #project-talkm .bg,
+    #project-talkm .illustration,
+    #project-gluthea .bg {
+        right: 0;
+    }
+    #project-biomark .bg {
+        height: 400px;
+    }
     #project-biomark .app {
         height: 320px;
-        width: 60%;
-        top: 210px;
+        width: 40%;
+        top: 70px;
         right: 25px;
     }
     #project-edukasyon .bg {
         width: 90%;
-        top: 246px;
+        height: 400px;
     }
     #project-talkm .bg {
-        background-position: bottom center;
         height: 400px;
-        width: 91%;
+        width: 100%;
         top: 0;
     }
     #project-talkm .illustration {
-        width: 90%;
-        top: 240px;
-        right: 25px;
+        width: 60%;
+        height: 400px;
+        /*right: 25px;*/
     }
     #project-gluthea .bg {
-        background-position: bottom center;
-        width: 88%;
+        width: 60%;
+        height: 400px;
         bottom: 0;
     }
     #project-gluthea .jinri {
-        background-position: bottom center;
         height: 400px;
-        width: 55%;
-        position: absolute;
-        top: 0;
-        right: 15px;
-    }
-
-    .cta .fas {
-        top: 70px;
+        width: 36%;
     }
 
     .socials {
@@ -764,21 +776,53 @@ footer a:hover {
     .tools {
         margin-bottom: 0;
     }
+
+    #projects .cta {
+        padding: 40px 20px;
+    }
+    #projects .cta i {
+        top: 40%;
+    }
+    #projects .cta div,
+    #experience .cta div {
+        width: 80%;
+    }
     #experience .cta {
         margin-top: 80px;
         margin-bottom: 40px;
+        padding: 40px 20px;
     }
     #experience .cta i {
-        top: 150px;
+        top: 55%;
     }
 
 }
 @media (max-width: 480px) {
+    h2 {
+        margin-bottom: 20px !important;
+    }
 
-    /*header .header-content {
-        padding: 180px 50px ;
-    }*/
+    #project-biomark .bg,
+    #project-edukasyon .bg,
+    #project-talkm .bg,
+    #project-talkm .illustration,
+    #project-gluthea .bg {
+        width: 100%;
+    }
+    #project-biomark .app {
+        width: 60%;
+    }
+    #project-gluthea .jinri {
+        width: 56%;
+        right: 15px;
+    }
 
+    #projects .cta i {
+        top: 65px;
+    }
+    #experience .cta i {
+        top: 145px;
+    }
 
 }
 

@@ -18,6 +18,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+canvas{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
 
 body {
     font-family: 'CircularStd', sans-serif;
@@ -51,7 +57,7 @@ a {
 }
 a:hover,
 a:focus {
-    color: #aaaaaa;
+    color: #888888;
     outline: none !important;
 }
 h1,
@@ -222,13 +228,10 @@ img {
         color: #555;
         background: url(../img/krvin-logo.png) no-repeat;
         background-size: 100%;
+        opacity: 1;
     }
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #ffffff;
-    }
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
         color: #ffffff;
     }
     .navbar-default.affix .nav > li>a:hover,
@@ -253,6 +256,9 @@ img {
         margin-top: 20px;
         margin-left: 15px;
         margin-bottom: 0;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand {
+        opacity: 1;
     }
     .navbar-default {
         -webkit-box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1);
@@ -372,6 +378,7 @@ header .header-content h1 {
 
 /*------------------------ CARDS ---------------------*/
 .card {
+    position: relative;
     background: #fff;
     -webkit-box-shadow: 0 20px 80px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0 20px 80px 0px rgba(0, 0, 0, 1);
@@ -389,6 +396,11 @@ header .header-content h1 {
     color: #201F1F;
     padding: 40px;
     overflow: hidden;
+}
+.card:hover {
+    -ms-transform: translateY(-6px); /* IE 9 */
+    -webkit-transform: translateY(-6px); /* Safari */
+    transform: translateY(-6px);
 }
 .card h6 {
     margin-bottom: 10px;
@@ -410,7 +422,7 @@ header .header-content h1 {
 .card .btn {
     position: absolute;
     bottom: 80px;
-    left: 55px;
+    left: 40px;
     padding: 0;
     font-size: 14px;
     letter-spacing: 1px;
@@ -438,17 +450,20 @@ header .header-content h1 {
     width: 50%;
     position: absolute;
     top: 0px;
-    right: 15px;
+    right: 0px;
 }
 #project-biomark .app {
     background: url(../img/project-biomark-app.png) no-repeat;
-    background-position: bottom; left;
+    background-position: bottom left;
     background-size: 100%;
     height: 460px;
     width: 45%;
     position: absolute;
     top: 0px;
     right: 35px;
+}
+#project-biomark a:hover {
+    color: #18b497;
 }
 #project-edukasyon .bg {
     background: url(../img/project-edukasyon-bg.png) no-repeat;
@@ -458,7 +473,10 @@ header .header-content h1 {
     width: 89%;
     position: absolute;
     top: 0px;
-    right: 15px;
+    right: 0px;
+}
+#project-edukasyon a:hover {
+    color: #fc8105;
 }
 #project-talkm {
     background-color: #ECEEF5;
@@ -468,10 +486,10 @@ header .header-content h1 {
     background-position: bottom left;
     background-size: 100%;
     height: 480px;
-    width: 97%;
+    width: 100%;
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 0px;
 }
 #project-talkm .illustration {
     background: url(../img/project-talkm-illustration.png) no-repeat;
@@ -482,6 +500,9 @@ header .header-content h1 {
     position: absolute;
     top: 0;
     right: 15px;
+}
+#project-talkm a:hover {
+    color: #396fd2;
 }
 #project-gluthea {
     background-color: #FEF3FC;
@@ -494,7 +515,7 @@ header .header-content h1 {
     width: 50%;
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 0px;
 }
 #project-gluthea .jinri {
     background: url(../img/project-gluthea-jinri.png) no-repeat;
@@ -505,6 +526,9 @@ header .header-content h1 {
     position: absolute;
     top: 0;
     right: 55px;
+}
+#project-gluthea a:hover {
+    color: #fa7dd4;
 }
 
 .cta {
@@ -580,6 +604,9 @@ header .header-content h1 {
     color: #fff;
     font-weight: bold;
 }
+#contact h2 a:hover {
+    color: #888;
+}
 .far,
 .fab {
     font-size: 24px;
@@ -651,10 +678,6 @@ footer a:hover {
     h2 {
         line-height: 1.2;
         margin-bottom: 40px !important;
-    }
-
-    .card .btn {
-        left: 55px;
     }
 
     #project-talkm .illustration {
@@ -810,6 +833,9 @@ footer a:hover {
         margin-bottom: 20px !important;
     }
 
+    #awwwards {
+        display: none;
+    }
  
     #experience h2 {
         margin-bottom: 80px !important;
@@ -826,18 +852,16 @@ footer a:hover {
         width: 100%;
     }
     #project-biomark .app {
-        width: 60%;
+        width: 56%;
+        right: 25%;
     }
     #project-talkm .illustration {
         width: 90%;
+        right: 10%;
     }
     #project-gluthea .jinri {
-        width: 56%;
-        right: 15px;
+        width: 50%;
+        right: 25%;
     }
 
-
 }
-
-
-

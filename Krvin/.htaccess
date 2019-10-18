@@ -2,3 +2,6 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^(www\.)?krvin\.com
 RewriteRule ^(.*)$ https://www.krvin.com/$1 [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
